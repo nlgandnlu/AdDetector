@@ -2,6 +2,9 @@ Install: (We use the transformer framework and develop in an editable way.)
 cd .../transformers/
 pip install --editable .
 
+model file:
+/src/transformers/models/bert/modeling_bert.py
+
 Software requirements:
 see requirements.txt
 
