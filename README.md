@@ -4,7 +4,7 @@ cd .../transformers/
 
 pip install --editable .
 
-## Dataset:(Put ZHIHU-16K/ in the /transformers/examples/pytorch/sequence-labeling/ directory)
+## Dataset: (Put ZHIHU-16K/ in the /transformers/examples/pytorch/sequence-labeling/ directory)
 
 download and preprocess dataset from https://anonymous.4open.science/r/ZHIHU-16K-2640/
 
