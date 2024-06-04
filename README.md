@@ -30,3 +30,5 @@ python -m torch.distributed.launch --nproc_per_node=8 run_language_modeling.py -
 
 python test.py --model_type=bert   --output_dir=tmp/ad_zhihu/ --model_name_or_path=tmp/xxx/  --do_eval --eval_data_file=ZHIHU-16K/ZHIHU_test0/  --line_by_line --block_size 32 --
 per_device_eval_batch_size 2 --label_num 2 --out_info_file test_information-xxx.xlsx --eval_label2 --con_loss --add_graph_data
+
+ZHIHU_test0-ZHIHU_test12 are the test results of 13 topics respectively.
