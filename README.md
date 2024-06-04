@@ -2,12 +2,14 @@ Install: (We use the transformer framework and develop in an editable way.)
 cd .../transformers/
 pip install --editable .
 
-model file:
+Dataset:(Put ZHIHU-16K/ in the /transformers/examples/pytorch/sequence-labeling/ directory)
+download and preprocess dataset from https://github.com/nlgandnlu/ZHIHU-16K/
+
+Model file:
 /src/transformers/models/bert/modeling_bert.py
 
-project path:
+Project path:
 /transformers/examples/pytorch/sequence-labeling/
-
 
 Software requirements:
 see requirements.txt
