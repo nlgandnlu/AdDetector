@@ -1,5 +1,7 @@
-Install: (We use the transformer framework and develop in an editable way.)
+## Install: (We use the transformer framework and develop in an editable way.)
+
 cd .../transformers/
+
 pip install --editable .
 
 ## Dataset:(Put ZHIHU-16K/ in the /transformers/examples/pytorch/sequence-labeling/ directory)
