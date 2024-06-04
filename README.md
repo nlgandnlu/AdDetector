@@ -5,6 +5,10 @@ pip install --editable .
 model file:
 /src/transformers/models/bert/modeling_bert.py
 
+project path:
+/transformers/examples/pytorch/sequence-labeling/
+
+
 Software requirements:
 see requirements.txt
 
