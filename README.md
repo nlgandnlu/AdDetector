@@ -24,7 +24,7 @@ download and preprocess dataset from https://anonymous.4open.science/r/ZHIHU-16K
 
 cd .../transformers/examples/pytorch/sequence-labeling/
 
-python -m torch.distributed.launch --nproc_per_node=8 run_language_modeling.py --output_dir=tmp/ad_zhihu_test   --model_type=bert   --model_name_or_path=bert-base-chinese   --do_train   --do_eval   --evaluate_during_training    --train_data_file=ZHIHU-16K/ZHIHU_train/   --eval_data_file=ZHIHU-16K/ZHIHU_val/  --line_by_line --block_size 32   --num_train_epochs 5   --learning_rate 5e-6   --warmup_steps 1600   --logging_steps 10   --save_steps 10   --per_device_train_batch_size 4   --gradient_accumulation_steps 1   --overwrite_output_dir --evaluation_strategy=steps --out_file_name ad_zhihu  --save_total_limit 1 --eval_label2 --con_loss --label_num 2
+python -m torch.distributed.launch --nproc_per_node=8 run_language_modeling.py --output_dir=tmp/ad_zhihu_test   --model_type=bert   --model_name_or_path=bert-base-chinese   --do_train   --do_eval   --evaluate_during_training    --train_data_file=ZHIHU-16K/ZHIHU_train/   --eval_data_file=ZHIHU-16K/ZHIHU_val/  --line_by_line --block_size 32   --num_train_epochs 5   --learning_rate 5e-6   --warmup_steps 1600   --logging_steps 10   --save_steps 10   --per_device_train_batch_size 4   --gradient_accumulation_steps 1   --overwrite_output_dir --evaluation_strategy=steps --out_file_name ad_zhihu  --save_total_limit 1 --eval_label2 --con_loss --label_num 2 --add_graph_data
 
 The following code can be removed：-m torch.distributed.launch --nproc_per_node=8
 ## Test:
