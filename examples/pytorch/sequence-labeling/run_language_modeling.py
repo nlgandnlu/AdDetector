@@ -312,7 +312,7 @@ class LMDataset(torch.utils.data.Dataset):
         self.entity_type_path = data_path + 'name_entity_file/'
         #存放graph_data的位置
         self.graph_path = graph_data_path+'edge/'
-        self.graph_feature_path =graph_data_path+'feature_pooling/'
+        self.graph_feature_path =graph_data_path+'feature/'
         self.tokenizer=tokenizer
         self.textfiles = self._get_files()
         # self.memory_mask = list(self._get_mask(memory_mask_path))
@@ -445,7 +445,7 @@ class LM_train_Dataset(torch.utils.data.Dataset):
         self.entity_type_path = data_path + 'name_entity_file/'
         #存放graph_data的位置
         self.graph_path = graph_data_path+'edge/'
-        self.graph_feature_path =graph_data_path+'feature_pooling/'
+        self.graph_feature_path =graph_data_path+'feature/'
         self.tokenizer=tokenizer
         self.textfiles = self._get_files()
         # self.memory_mask = list(self._get_mask(memory_mask_path))
