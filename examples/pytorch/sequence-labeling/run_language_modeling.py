@@ -845,7 +845,7 @@ def main():
         )
 
         tokenizer.save_pretrained(training_args.output_dir)
-        trainer.train(model_path=model_path)
+        trainer.train(model_path=None)
         #trainer.save_model()
 
         #输出测评结果到文件中
