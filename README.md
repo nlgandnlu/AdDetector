@@ -4,6 +4,8 @@ see requirements.txt
 
 By the way, the designated experimental environment version is relatively low. We have tested the new environment and found that this project can also run on PyTorch 2.0.1 and Python 3.11.3 CUDA 11.4.
 
+It is recommended to install the correct Python version and torch, CUDA, and other versions first, then follow the following command to install the transformer library(necessary step), and then install the missing libraries one by one from the requirements.
+
 ## Install transformers: (Please note that special installation is required for this package. We integrated our model files into it and made some modifications. We use the transformer framework and develop in an editable way.)
 
 pip install --editable .
