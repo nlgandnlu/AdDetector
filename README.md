@@ -23,6 +23,7 @@ download and preprocess dataset from https://anonymous.4open.science/r/ZHIHU-16K
 /transformers/examples/pytorch/sequence-labeling/
 
 ## Train:
+2 gpus:
 
 cd .../transformers/examples/pytorch/sequence-labeling/
 
