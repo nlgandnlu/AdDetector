@@ -39,3 +39,7 @@ python test.py --model_type=bert --model_name_or_path=output_dir/  --do_eval --e
 per_device_eval_batch_size 2 --label_num 2 --out_info_file test_information-xxx.xlsx --eval_label2 --con_loss --add_graph_data
 
 ZHIHU_test0-ZHIHU_test12 are the test results of 13 topics respectively.
+
+## Model checkpoint:
+
+https://drive.google.com/file/d/1422_sbnrtqNcT7jHh_T_xlRddcwLvLtn/view?usp=drive_link
